@@ -1,0 +1,60 @@
+body {
+    font: white;
+}
+
+#main-container {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    position: relative;
+    background-image: url("../assets/seattle1.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 90vw;
+    height: calc(90vw * 642 / 900);
+
+    z-index: 10;
+    border: 5px white solid;
+}
+
+#big-location-img {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    border-radius: 20px;
+    border: 1px white solid;
+    z-index: 1;
+}
+
+#run-description {
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 2;
+    border-radius: 20px;
+    border: 1px white solid;
+    z-index: 1;
+    
+}
+
+#choices-form {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 2;
+   
+
+    border-radius: 20px;
+    border: 1px white solid;
+    z-index: 1;
+   
+}
+
+#choice-result {
+    grid-row-start: 4;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    border-radius: 20px;
+    border: 1px white solid;
+    z-index: 1; 
+}
+
+

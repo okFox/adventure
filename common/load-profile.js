@@ -13,7 +13,7 @@ function loadProfile() {
     if (!user) {
         window.location = './';
     }
-
+//check this after formatting final art
     name.textContent = user.name;
     avatar.src = '../assets/' + user.role + '.png';
     gold.textContent = user.nuyen;
