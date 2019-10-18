@@ -1,0 +1,19 @@
+header {
+    color: white;
+}
+#quests {
+    position: relative;
+   
+    background-image: url("../assets/seattle1.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 90vw;
+    height: calc(90vw * 642 / 900);
+    margin: auto;
+}
+
+#srlogo {
+    height: 150px;
+    width: 300px;
+
+}

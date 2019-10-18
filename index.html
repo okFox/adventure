@@ -1,17 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shadowrun Adventure</title>
+    <link rel="stylesheet" href="common/main.css">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
 </head>
-
 <body>
+    <header>
+        <img src="./assets/SR_logo.jpg" alt="Shadowrun Logo">
+        <h1>Shadowrun Adventure</h1>
+    </header>
+    
+    <main> 
+        <h2>
+            Start Here Adventurer, If You Dare!
+        </h2>
+        <form id="user-sign-up">
+            <p class="text-prompt">
+                <label for="name">Your Runner Name:</label>
+                <input id="name" name="name" required>
+            </p>
+            <fieldset>
+                <legend>Pick Your Role:</legend>
+                <p id="avatars">
+                    <label>
+                        <input type="radio" name="role" required value="streetsam">
+                        <img src="./assets/streetsam.png">
+                        Street Samurai
+                    </label>
+                    <label>
+                        <input type="radio" name="role" required value="decker">
+                        <img src="./assets/decker.png">
+                        Decker
+                    </label>
+                    <label>
+                        <input type="radio" name="role" required value="face">
+                        <img src="./assets/face.png">
+                        Face
+                    </label>
+                    <label>
+                        <input type="radio" name="role" required value="mage">
+                        <img src="./assets/mage.png">
+                        Mage
+                    </label>
+                </p>
+            </fieldset>
+            <button>Start Adventure Quest</button>
+        </form>
+    </main>
 
-    <script type="module" src="app.js"></script>
+    <footer>
+        <cite>
+            So many borrowed images.
+        </cite>
+    </footer>
+
+    <script type="module" src="home/home.js"></script>
 </body>
-
 </html>
