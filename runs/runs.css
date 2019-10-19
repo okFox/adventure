@@ -17,14 +17,22 @@ body {
     border: 5px white solid;
 }
 
-#big-location-img {
+div#location-photo {
+
     grid-row-start: 2;
     grid-row-end: 4;
     grid-column-start: 1;
+}
+
+#location-photo img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
     border-radius: 20px;
     border: 1px white solid;
-    z-index: 1;
+    z-index: 1;  
 }
+
 
 #run-description {
     grid-row-start: 1;
@@ -47,7 +55,13 @@ body {
     border: 1px white solid;
     z-index: 1;
     font: white;
-   
+    padding: 5px;
+    background-color: rgba(255,255,255,.4);
+}
+
+.choice {
+    display: flex;
+
 }
 
 #choice-result {
