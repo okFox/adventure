@@ -1,13 +1,14 @@
-const matrix = {
+const runsList = [{
     id: 'matrix',
     title: 'Hack The Matrix',
+    location: 'heights',
     map: {
         top: '89%',
         left: '44%'
     },
-    image: 'monsters.jpg',
-    audio: 'monsters.wav',
-    action: 'monster-scream.wav',
+    image: 'heights.png',
+    audio: '',
+    action: '',
     description: `
         A fellow runner tells you she knows of a corrupt businessman keeping a list of runners to eliminate.  You break into his mansion in The Heights in the middle of the night.  You see the data port just begging you to jack into the matrix...
     `,
@@ -36,4 +37,6 @@ const matrix = {
         hp: -50,
         nuyen: 0
     }]
-};
+}];
+
+export default runsList;
