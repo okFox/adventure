@@ -4,11 +4,11 @@ import createChoice from './create-choice.js';
 import scoreRun from './score-runs.js';
 
 
-//const searchParams = new URLSearchParams(window.location.search);
-//const runsId = searchParams.get('id');
+const searchParams = new URLSearchParams(window.location.search);
+const runsId = searchParams.get('id');
 
 //change below when queries are live
-const runsId = 'matrix';
+//const runsId = 'matrix';
 
 
 const currentRun = findById(runsList, runsId);
@@ -17,10 +17,6 @@ const currentRun = findById(runsList, runsId);
 //    window.location = '../map';
 //}
     
-const avatar = document.getElementById('avatar');
-const runnerName = document.getElementById('name');
-const hp = document.getElementById('hp');
-const nuyen = document.getElementById('nuyen');
 
 const bigLocationImg = document.getElementById('big-location-image');
 
