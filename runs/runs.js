@@ -1,10 +1,13 @@
-import { findById } from '../common/utils.js';
+import { findById, getUser, saveUser } from '../common/utils.js';
 import runsList from '../data/runs-api.js';
 import createChoice from './create-choice.js';
+import scoreRun from './score-runs.js';
 
 
 //const searchParams = new URLSearchParams(window.location.search);
 //const runsId = searchParams.get('id');
+
+//change below when queries are live
 const runsId = 'matrix';
 
 
@@ -22,8 +25,9 @@ const nuyen = document.getElementById('nuyen');
 const bigLocationImg = document.getElementById('big-location-image');
 
 const runDescription = document.getElementById('run-description');
-const choices = document.getElementById('choices-form');
+const choicesForm = document.getElementById('choices-form');
 const choiceResult = document.getElementById('choice-result');
+
 
 //get avatar, runnername, hp, nuyen from local storage
 
@@ -38,7 +42,23 @@ for (let index = 0; index < currentRun.choices.length; index++) {
     // go make a choice dom element
     const choiceDOM = createChoice(choice);
     // and append that choice
-    choices.appendChild(choiceDOM);
+    choicesForm.appendChild(choiceDOM);
 }
 
+choicesForm.addEventListener('submit', function(event) {
+    event.preventDefault();
 
+    const formData = new FormData(choicesForm);
+    
+    const choiceId = formData.get('choice');
+    const userChoice = findById(runsList.choices, choiceId);
+
+    const user = getUser();
+
+    scoreRun(userChoice, currentRun.id, user);
+    saveUser(user);
+
+    userChoice.classList.add('hidden');
+    choiceResult.textContent = userChoice.result;
+    
+});

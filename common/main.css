@@ -1,11 +1,23 @@
 body {
     background: black;
-    font: white;
+    color: limegreen;
+    font-family: 'Courier New', Courier, monospace;
 
 }
 
 header {
-    font: white;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 2;
+    color: limegreen;
+    font-family: 'Courier New', Courier, monospace;
+}
+#srlogo {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    height: 200px;
+    width: 100px;
+
 }

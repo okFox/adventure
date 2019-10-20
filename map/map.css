@@ -1,7 +1,5 @@
-header {
-    color: white;
-}
-#quests {
+
+#runs {
     position: relative;
    
     background-image: url("../assets/seattle1.jpg");
@@ -12,8 +10,5 @@ header {
     margin: auto;
 }
 
-#srlogo {
-    height: 150px;
-    width: 300px;
 
-}
+

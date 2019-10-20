@@ -1,12 +1,12 @@
 import isDead from '../common/is-dead.js';
-import { getUser } from '../data/api.js';
+import { getUser } from '../common/utils.js';
 
 function loadProfile() {
  
     const name = document.getElementById('name');
     const avatar = document.getElementById('avatar');
     const hp = document.getElementById('hp');
-    const gold = document.getElementById('gold');
+    const nuyen = document.getElementById('nuyen');
 
     const user = getUser();
 
@@ -16,7 +16,7 @@ function loadProfile() {
 //check this after formatting final art
     name.textContent = user.name;
     avatar.src = '../assets/' + user.role + '.png';
-    gold.textContent = user.nuyen;
+    nuyen.textContent = user.nuyen;
 
     if (isDead(user)) {
         hp.textContent = 'R.I.P.';

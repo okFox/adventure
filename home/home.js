@@ -13,5 +13,5 @@ userSignUp.addEventListener('submit', function(event) {
 
     saveUser(user);
 
-    window.location.map;
+    window.location = 'map';
 });
