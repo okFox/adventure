@@ -29,14 +29,18 @@
         <div id='location-photo'><image id='big-location-image' src=''></image></div>
         <div id='run-description'></div>
         
-        <Div id='choice-container'>
-            <form action="submit" id='choices-form'>
-                
-                <button id='choose-button'>Pick Your Poison</button>
-            </form></Div>
+        <div id='choice-container'>
+            
+            <form action="submit" id='choices-form' required>
+                <button>C:\>Make your choice</button>
+            </form>
+        </div>
         
-        <div id='choice-result'>choice result</div>
-
+        
+        <section id="choice-result" class="hidden">
+            <p id="result-description"></p>
+            <a href="../map">Back to Map</a>
+        </section>
 
     </main>
    
