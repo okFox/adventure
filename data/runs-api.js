@@ -65,7 +65,7 @@ const hostage = {
         id: 'war',
         description: 'A few well placed rumors and you can start quite the gang war.  You know just the trolls to rile up.  ',
         result: `
-            Well that escalated quickly.  You barely got out of their with the kid before the building came down on everyone in the fight.  You just hope no one saw you anywhere near that mess.  You gain 50 NuYen and lose 10 HP.
+            Well that escalated quickly.  You barely got out of there with the kid before the building came down on everyone in the fight.  You just hope no one saw you anywhere near that mess.  You gain 50 NuYen and lose 10 HP.
         `,
         hp: -10,
         nuyen: +50

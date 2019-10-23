@@ -23,7 +23,7 @@ const bigLocationImg = document.getElementById('big-location-image');
 const runDescription = document.getElementById('run-description');
 const choicesForm = document.getElementById('choices-form');
 const choiceResult = document.getElementById('choice-result');
-const choiceButton = document.getElementById('choice-button');
+//const choiceButton = document.getElementById('choice-button');
 
 
 //get avatar, runnername, hp, nuyen from local storage

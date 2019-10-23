@@ -11,29 +11,20 @@
     <header>
         <div class='logo'><img id='srlogo' src="../assets/SR_logo.png" alt="Shadowrun Logo"></div>
         <h1>Shadowrun Adventure</h1>
-        <div class="profile">
-            <img id="avatar" src="">
-            <span id="name"></span>
-            <span class="profile-stat-label">HP:</span>
-            <span id="hp"></span>
-            <span class="profile-stat-label">NuYen:</span>
-            <span id="nuyen"></span>
-        </div>
-        <div id='location-header'></div>
+        <h2>Complete Runs, get Paid.</h2>
+        
     </header>
     
     <main> 
-        <h2>
-            Complete Runs, get Paid.
-        </h2>
+        
         <form id="user-sign-up">
             <p class="text-prompt">
                 <label for="name">Your Runner Name:</label>
                 <input id="name" name="name" required>
             </p>
-            <fieldset>
-                <legend>Pick Your Role:</legend>
-                <p id="avatars">
+            <section>
+                <h3>Pick Your Role:</h3>
+                <div id="avatars">
                     <label>
                         <input type="radio" name="role" required value="streetsam">
                         <img src="./assets/streetsam.png">
@@ -54,9 +45,9 @@
                         <img src="./assets/mage.png">
                         Mage
                     </label>
-                </p>
-            </fieldset>
-            <button>Where to Next?</button>
+                </div>
+            </section>
+            <button id='ready-button'>Pick a Run</button>
         </form>
     </main>
 

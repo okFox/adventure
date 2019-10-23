@@ -18,6 +18,8 @@ header {
     grid-row-start: 1;
     grid-row-end: 4;
     height: 200px;
-    width: 100px;
-
+    width: 150px;
+}
+.profile {
+    font-size: 150%;
 }
