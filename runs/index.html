@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="runs.css">
+    <link rel="stylesheet" href="../common/main.css">
+    <title>Available Runs</title>
+</head>
+<body>
+    
+    <header>
+        <div class='logo'><img id='srlogo' src="../assets/SR_logo.png" alt="Shadowrun Logo"></div>
+        <h1>Shadowrun Adventure</h1>
+        <div class="profile">
+            <img id="avatar" src="">
+            <span id="name"></span>
+            <span class="profile-stat-label">HP:</span>
+            <span id="hp"></span>
+            <span class="profile-stat-label">NuYen:</span>
+            <span id="nuyen"></span>
+        </div>
+        <div id='location-header'></div>
+    </header>
+    
+    <main id='main-container'>
+
+        <div id='location-photo'><image id='big-location-image' src=''></image></div>
+        <div id='run-description'></div>
+        
+        <div id='choice-container'>
+            
+            <form action="submit" id='choices-form' required>
+                <button>C:\>Make your choice</button>
+            </form>
+        </div>
+        
+        
+        <section id="choice-result" class="hidden">
+            <p id="result-description"></p>
+            
+        </section>
+
+    </main>
+   
+
+
+
+
+
+
+
+
+
+    <script type="module" src="./runs.js"></script>
+
+</body>
+</html>

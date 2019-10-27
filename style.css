@@ -1,0 +1,66 @@
+img {
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+}
+#srlogo {
+    border:none;
+}
+img:hover {
+    border: 1px red solid;
+}
+
+#avatars {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    margin: 25px;
+}
+
+input[type='radio'] {
+  display: none;  
+}
+
+label {
+    cursor: pointer;
+}
+label[for='name'] {
+    font-size: 150%;
+}
+button[id='ready-button'] {
+   margin-left: 45%;
+}
+
+input#name {
+      font-size: 200%;
+      background-color: black;
+      border: 1px limegreen solid;
+      color: limegreen;
+      color: whitesmoke;
+      border-radius: 10px;
+}
+
+ button {
+    cursor: pointer;
+    margin-top: 100px;
+    font-size: 200%;
+    background-color: black;
+    border: 1px limegreen solid;
+    color: limegreen;
+    color: whitesmoke;
+    border-radius: 10px;
+  }
+
+  footer {
+      margin-top: 200px;
+  }
+
+  h3 {
+      display: flex;
+      justify-content: center;
+      font-size: 150%;
+  }
+
+  h1 {
+      font-size: 300%;
+  }

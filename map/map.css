@@ -1,0 +1,29 @@
+
+#runs {
+    position: relative;
+   
+    background-image: url("../assets/seattle1.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 90vw;
+    height: calc(90vw * 642 / 900);
+    margin: auto;
+}
+
+.run.completed {
+    color: whitesmoke;
+    font-size: .9em;
+}
+
+.run.completed:after {
+    content: ' ✔';
+}
+
+.runs img{
+    position: absolute;
+    height: 200px;
+    width: 300px;
+    border-radius: 20px;
+    border: 1px ghostwhite solid;
+   
+}
