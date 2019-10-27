@@ -13,7 +13,7 @@ test('Locate ID in array', function(assert) {
         { id: 'slums', visited: false },
         { id: 'heights', visited: true },
         { id: 'towers', visited: false }
-    ]
+    ];
     const id = 'slums';
 
     
